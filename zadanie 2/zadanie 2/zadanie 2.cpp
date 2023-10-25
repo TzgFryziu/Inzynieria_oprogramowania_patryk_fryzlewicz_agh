@@ -35,6 +35,7 @@ int main()
         cout << BB[i] << " ";
     }
 
+    cout << "\nLiczba pominiętych wartosci: " << ujemne;
 
  
 }
