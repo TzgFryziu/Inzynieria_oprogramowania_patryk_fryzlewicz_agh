@@ -1,0 +1,223 @@
+
+patry@Patrys MINGW64 ~/Desktop
+$ cd io\ git/
+
+patry@Patrys MINGW64 ~/Desktop/io git
+$ ls
+
+patry@Patrys MINGW64 ~/Desktop/io git
+$ git init
+Initialized empty Git repository in C:/Users/patry/Desktop/io git/.git/
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git config user.name tzgfryziu
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git config user.name "tzgfryziu"
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git config user.email "patryk.fryzlewicz@gmail.com"
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ touch main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.cpp
+
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "pierwszy commit"
+[master (root-commit) 4cdf646] pierwszy commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git log
+commit 4cdf6468a814c1632b13e632145ec64da4f6a56a (HEAD -> master)
+Author: tzgfryziu <patryk.fryzlewicz@gmail.com>
+Date:   Wed Dec 20 13:26:04 2023 +0100
+
+    pierwszy commit
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "drugi commit"
+[master 486e6b4] drugi commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.cpp
+
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ touch struktura.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.cpp
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        struktura.cpp
+
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add struktura.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add main.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "trzeci commit"
+[master b7d367f] trzeci commit
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+ create mode 100644 struktura.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    struktura.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "czwarty commit"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    struktura.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git state
+git: 'state' is not a git command. See 'git --help'.
+
+The most similar command is
+        stage
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    struktura.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "czwarty commit"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    struktura.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git add struktura.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git commit -m "czwarty commit"
+[master 45db039] czwarty commit
+ 1 file changed, 10 deletions(-)
+ delete mode 100644 struktura.cpp
+
+patry@Patrys MINGW64 ~/Desktop/io git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
